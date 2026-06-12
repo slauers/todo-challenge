@@ -1,0 +1,29 @@
+# --- Java / Maven ---
+backend/target/
+*.class
+*.jar
+!backend/.mvn/wrapper/maven-wrapper.jar
+
+# --- Node / Vite ---
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# --- IDE ---
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Env / local ---
+.env
+*.log
+
+# --- Material do desafio (não publicar) ---
+*.pdf

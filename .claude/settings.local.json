@@ -1,33 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "PowerShell([Environment]::GetEnvironmentVariable\\(\"Path\",\"User\"\\) -split ';' | Select-String -Pattern \"WinGet|jq\")",
-      "Bash(java -version)",
-      "Bash(npm --version)",
-      "Bash(docker --version)",
-      "Bash(git --version)",
-      "Bash(mvn --version)",
-      "Read(//c/Program Files/**)",
-      "Read(//c/Users/Saulo/scoop/**)",
-      "Read(//c/ProgramData/chocolatey/**)",
-      "Bash(winget install *)",
-      "Bash(git init *)",
-      "Bash(git config *)",
-      "Bash(cd /tmp)",
-      "Bash(curl -s -o todo-backend.zip \"https://start.spring.io/starter.zip?type=maven-project&language=java&bootVersion=3.4.1&groupId=com.inter&artifactId=todo&name=todo&packageName=com.inter.todo&javaVersion=21&dependencies=web,data-jpa,validation,actuator,postgresql,flyway\")",
-      "Bash(unzip -q -o todo-backend.zip -d todo-backend)",
-      "Bash(curl -s -o todo-backend.zip \"https://start.spring.io/starter.zip?type=maven-project&language=java&groupId=com.inter&artifactId=todo&name=todo&packageName=com.inter.todo&javaVersion=21&dependencies=web,data-jpa,validation,actuator,postgresql,flyway\")",
-      "Bash(curl -s \"https://start.spring.io/metadata/client\" -H \"Accept: application/json\")",
-      "Bash(\"/c/Users/Saulo/AppData/Local/Microsoft/WinGet/Packages/jqlang.jq_Microsoft.Winget.Source_8wekyb3d8bbwe/jq.exe\" -r '.bootVersion.values[].id')",
-      "Bash(rm -rf todo-backend todo-backend.zip)",
-      "Bash(curl -s -o todo-backend.zip \"https://start.spring.io/starter.zip?type=maven-project&language=java&bootVersion=3.5.15&groupId=com.inter&artifactId=todo&name=todo&packageName=com.inter.todo&javaVersion=21&dependencies=web,data-jpa,validation,actuator,postgresql,flyway\")",
-      "Bash(unzip -q todo-backend.zip -d todo-backend)",
-      "Bash(mkdir -p /c/Users/Saulo/projects/to-do/backend)",
-      "Bash(npm create *)",
-      "Bash(npm install *)",
-      "Bash(export JAVA_HOME=\"/c/Program Files/Eclipse Adoptium/jdk-21.0.11.10-hotspot\")",
-      "Bash(./mvnw -q compile)",
-      "Bash(echo \"EXIT: $?\")"
+      "Bash(git add *)",
+      "Bash(git commit *)"
     ]
   }
 }

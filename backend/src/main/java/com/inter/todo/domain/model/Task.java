@@ -6,10 +6,6 @@ import java.time.Instant;
 import java.util.Objects;
 import java.util.UUID;
 
-/**
- * Entidade de domínio pura (sem dependência de JPA/framework).
- * Invariantes garantidas aqui: título obrigatório e status nunca nulo.
- */
 public class Task {
 
     private static final int TITLE_MAX_LENGTH = 255;
@@ -28,12 +24,10 @@ public class Task {
         this.description = description;
     }
 
-    /** Cria uma nova tarefa com status inicial PENDING. */
     public static Task create(String title, String description) {
         return new Task(UUID.randomUUID(), title, description, TaskStatus.PENDING, Instant.now());
     }
 
-    /** Reconstrói uma tarefa existente (uso da camada de persistência). */
     public static Task restore(UUID id, String title, String description, TaskStatus status, Instant createdAt) {
         return new Task(id, title, description, status, createdAt);
     }

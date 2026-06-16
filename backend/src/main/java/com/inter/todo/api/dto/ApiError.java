@@ -3,7 +3,6 @@ package com.inter.todo.api.dto;
 import java.time.Instant;
 import java.util.List;
 
-/** Corpo padrão de erro da API. */
 public record ApiError(
         Instant timestamp,
         int status,

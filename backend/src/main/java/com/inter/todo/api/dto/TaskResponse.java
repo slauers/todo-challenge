@@ -6,7 +6,6 @@ import com.inter.todo.domain.model.TaskStatus;
 import java.time.Instant;
 import java.util.UUID;
 
-/** Representação de uma tarefa retornada pela API. */
 public record TaskResponse(
         UUID id,
         String title,

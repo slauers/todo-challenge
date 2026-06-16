@@ -9,6 +9,10 @@ frontend/node_modules/
 frontend/dist/
 frontend/.vite/
 
+# --- E2E smoke (local) ---
+frontend/e2e-shots/
+frontend/e2e-smoke.mjs
+
 # --- IDE ---
 .idea/
 *.iml
@@ -27,3 +31,5 @@ Thumbs.db
 
 # --- Material do desafio (não publicar) ---
 *.pdf
+FILE_MAP.md
+TESTE_TECNICO.md
